@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+.navigation{
+    font-family: var(--font1);
+    /* height: 74px; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.nav-left{
+    display: flex;
+}
+
+.nav-left span{
+    font-size: 30px;
+    /* margin-bottom: 14px; */
+    /* padding-top: 6px; */
+}
+
+.nav-left ul{
+    display: flex;
+    align-items: center;
+    margin: 0 44px;
+    font-size: 22px;
+}
+
+.nav-left ul li{
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font2);
+}
+
+.nav-left ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left ul li a:hover{
+    color: var(--main-bg-color);
+}
+
+.content{
+    height: 100%;
+    /* background-color: rgb(203, 203, 233); */
+    display: flex;
+    margin-top: 30px;
+    padding: 9px;
+    position: relative;
+}
+
+.content::after{
+    content: "";
+    background-image: url(/img/newspaper.webp);
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+}
+
+.content-left{
+    font-family: var(--font1);
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+.content-right{
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right img{
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 200px;
+}
+
+.home-articles{
+    /* height: 455px; */
+    background-color: rgba(240, 238, 238, 0.3);
+    padding: 13px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.year-box{
+    position: absolute;
+    width: 125px;
+    height: 300px;
+    right: 0;
+    top: 100px;
+    text-align: center;
+    font-size: 18px;
+    /* background-color: violet; */
+}
+
+.year-box div{
+    margin: 12px 0;
+}
+
+.home-article{
+    display: flex;
+    margin: 25px;
+}
+
+.home-article img{
+    width: 215px;
+    height: 230px;
+    cursor: pointer;
+}
+
+.home-article-content{
+    align-self: center;
+    padding: 25px;
+}
+
+.home-article-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer{
+    height: 50px;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+.footer a{
+    color: #fff;
+}
